@@ -87,5 +87,5 @@ class RoomLeave(APIView):
         responses={200: openapi.Response('Успешно покинута комната')}
     )
     def post(self, request):
-        request.user.joined_rooms.filter(is_active=True).clear()
+        request.user.joined_rooms.remove(*request.user.joined_rooms.filter(is_active=True))
         return Response({'message': 'Left room'}, status=status.HTTP_200_OK)
