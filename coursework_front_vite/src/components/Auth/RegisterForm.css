@@ -1,0 +1,59 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-form h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #68d391;
+    margin-bottom: 1.5rem;
+    animation: blink 1s infinite;
+}
+
+.register-form .error {
+    font-size: 0.625rem;
+    color: #ff5555;
+    text-align: center;
+}
+
+.register-form label {
+    font-size: 0.625rem;
+    color: #cbd5e0;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2d3748;
+    color: #ffffff;
+    border: 2px solid #4a5568;
+    border-radius: 0.125rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    transition: border-color 0.2s;
+}
+
+.register-form input:focus {
+    outline: none;
+    border-color: #68d391;
+}
+
+.register-form button {
+    width: 100%;
+    background-color: #48bb78;
+    padding: 0.5rem 1rem;
+}
+
+.register-form button:hover {
+    background-color: #38a169;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}

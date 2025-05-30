@@ -1,0 +1,6 @@
+.idea
+.venv
+dump.rdb
+db.sqlite3
+*/__pycache__
+staticfiles
